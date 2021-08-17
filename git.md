@@ -18,17 +18,20 @@
     * git log - <num>   *Ограничение на кол-во выводимых комитов*
     * git log --grep <'commit comment'> *Поиск по коментам*
     * git log -S <'string code'>
-    * git log --all *По всем весткам*
+    * git log --all *По всем веткам*
 * git blame --<file_name> [KEKW](https://media.makeameme.org/created/i-dont-know-5c3e1e.jpg)
 * git show <commit_ad> or <tag> *--<file_name> Не обязательно*
 * git push -u origin master
+    * --all *Отправить все ветки*
 
 
 
 ###BRANCH
 * git branch <branch_name>
     * git branch  *Показать ветки*
+      * -a *Все удаленные ветки*
     * -d   *Удалить **LOCAL** ветку*
+* git checkout --track <remote-branch> *Клонирование удаленной ветки*
 * git push --delete origin <branch_name>   *Удалить **GITHUB** ветку! После нужно удалить **LOCAL** ветку*
 * git checkout <branch_name>   *Смена ветки*
     * git checkout -b <branch_name> *Создание новой и переход в нее*
@@ -51,4 +54,8 @@
     * git reset -soft <commit_id> *Все сохраняет*
     * git reset -mixed <commit_id> *Все отмененные изменения оставляет в рабочей директории*
 * git reset <mode> HEAD~<num>  *Откат от позиции HEAD на NUM шагов*
+
+###OTHER
+* git fetch *Скачивает новую/измененную ветку с **GITHUB***
+* git pull *fetch + merge*
 
